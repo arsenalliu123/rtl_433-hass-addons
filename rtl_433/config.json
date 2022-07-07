@@ -1,13 +1,14 @@
 {
   "name": "rtl_433",
   "image": "ghcr.io/arsenalliu123/rtl_433-hass-addons-rtl_433-{arch}",
-  "version": "0.2.3",
+  "version": "0.2.3.1",
   "slug": "rtl433",
   "description": "Receive wireless sensor data via an SDR dongle and rtl_433",
   "url": "https://github.com/arsenalliu123/rtl_433-hass-addons/tree/main/rtl_433",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
   "boot": "auto",
+  "init": false,
   "options": {
     "mqtt_host": "hassio",
     "mqtt_port": 1883,
