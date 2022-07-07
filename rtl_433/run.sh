@@ -1,4 +1,4 @@
-#!/usr/bin/env bashio
+#!/usr/bin/with-contenv bashio
 
 MQTT_HOST=$(bashio::config 'mqtt_host')
 MQTT_PORT=$(bashio::config 'mqtt_port')
