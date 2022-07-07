@@ -24,15 +24,15 @@ else
     export MQTT_PASSWORD=$(bashio::services mqtt "password")
   else
     echo "Using an external mqtt broker."
-    MQTT_HOST=$(bashio::config "mqtt_host")
-    MQTT_PORT=$(bashio::config "mqtt_port")
-    export MQTT_USERNAME=$(bashio::config "mqtt_user")
-    export MQTT_PASSWORD=$(bashio::config "mqtt_password")
+    MQTT_HOST=$(bashio::config 'mqtt_host')
+    MQTT_PORT=$(bashio::config 'mqtt_port')
+    export MQTT_USERNAME=$(bashio::config 'mqtt_user')
+    export MQTT_PASSWORD=$(bashio::config 'mqtt_password')
   fi
 
-  RTL_TOPIC=$(bashio::config "rtl_topic")
-  DISCOVERY_PREFIX=$(bashio::config "discovery_prefix")
-  DISCOVERY_INTERVAL=$(bashio::config "discovery_interval")
+  RTL_TOPIC=$(bashio::config 'rtl_topic')
+  DISCOVERY_PREFIX=$(bashio::config 'discovery_prefix')
+  DISCOVERY_INTERVAL=$(bashio::config 'discovery_interval')
 
   OTHER_ARGS=""
   if bashio::config.true "mqtt_retain"; then

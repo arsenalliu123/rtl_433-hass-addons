@@ -8,6 +8,8 @@
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
   "boot": "auto",
+  "services": ["mqtt:want"],
+  "udev": true,
   "init": false,
   "options": {
     "mqtt_host": "hassio",
